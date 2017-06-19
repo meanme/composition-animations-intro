@@ -1,5 +1,5 @@
-#Intro to Composition Animations
-####An animated galaxy
+# Intro to Composition Animations<br/>
+#### An animated galaxy
 
 Companion project for the blog entry
 http://meanme.azurewebsites.net/intro-to-composition-animations/
