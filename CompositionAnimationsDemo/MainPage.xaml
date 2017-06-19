@@ -1,0 +1,49 @@
+﻿<Page
+    x:Class="CompositionAnimationsDemo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CompositionAnimationsDemo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Ellipse Width="50" Height="50" Fill="Orange" />
+
+        <Grid x:Name="StarField">
+            <Rectangle Width="15" Height="15" Fill="Yellow" >
+                <Rectangle.RenderTransform>
+                    <CompositeTransform TranslateX="200" TranslateY="120" />
+                </Rectangle.RenderTransform>
+            </Rectangle>
+
+            <Rectangle Width="5" Height="5" Fill="Yellow" >
+                <Rectangle.RenderTransform>
+                    <CompositeTransform TranslateX="-200" TranslateY="150" />
+                </Rectangle.RenderTransform>
+            </Rectangle>
+
+            <Rectangle Width="10" Height="10" Fill="Yellow" >
+                <Rectangle.RenderTransform>
+                    <CompositeTransform TranslateX="-150" TranslateY="-150" />
+                </Rectangle.RenderTransform>
+            </Rectangle>
+
+            <Rectangle Width="5" Height="5" Fill="Yellow" >
+                <Rectangle.RenderTransform>
+                    <CompositeTransform TranslateX="150" TranslateY="-200" />
+                </Rectangle.RenderTransform>
+            </Rectangle>
+        </Grid>
+
+        <Grid x:Name="Orbit">
+            <Grid x:Name="Planet">
+                <Ellipse Width="30" Height="30" Fill="DarkGreen"/>
+
+                <Ellipse x:Name="Satellite" Width="15" Height="15" Fill="DarkGray"/>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Page>
